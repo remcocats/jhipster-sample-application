@@ -1,0 +1,66 @@
+{
+  "name": "Vreemdeling",
+  "fields": [
+    {
+      "fieldName": "vreemdelingId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vnummer",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "burgerservicenummer",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "verblijf",
+      "otherEntityRelationshipName": "vreemdeling",
+      "relationshipName": "verblijf",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "persoonsnaamVolgensDocumentVoorGrensoverschrijding",
+      "otherEntityRelationshipName": "vreemdeling",
+      "relationshipName": "naam",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "toetsresultaat",
+      "otherEntityRelationshipName": "vreemdeling",
+      "relationshipName": "toetsresultaat"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "nationaliteit",
+      "otherEntityRelationshipName": "vreemdeling",
+      "relationshipName": "nationaliteit"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "toetsresultaat",
+      "otherEntityRelationshipName": "vreemdeling",
+      "relationshipName": "toetsresultaat",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200813091303",
+  "entityTableName": "vreemdeling",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "skipClient": true
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Referentstelling",
+  "fields": [],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "erkendReferent",
+      "otherEntityRelationshipName": "referentstelling",
+      "relationshipName": "erkendReferent",
+      "otherEntityField": "id",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20200813091203",
+  "entityTableName": "referentstelling",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "skipClient": true
+}

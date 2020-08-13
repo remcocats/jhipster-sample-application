@@ -14,7 +14,26 @@
     <property name="uuidType" value="varchar(36)" dbms="h2, mysql, mariadb"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813091103_added_entity_Verblijf.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813091203_added_entity_Referentstelling.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813091303_added_entity_Vreemdeling.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813091403_added_entity_PersoonsnaamVolgensDocumentVoorGrensoverschrijding.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813091503_added_entity_Bekostiging.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813091603_added_entity_ErkendReferent.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813091703_added_entity_Erkenning.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813091803_added_entity_Kenniswerk.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813091903_added_entity_Nationaliteit.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813092003_added_entity_Toetsresultaat.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813092103_added_entity_Verblijfsdoel.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20200813091103_added_entity_constraints_Verblijf.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813091203_added_entity_constraints_Referentstelling.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813091303_added_entity_constraints_Vreemdeling.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813091503_added_entity_constraints_Bekostiging.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813091603_added_entity_constraints_ErkendReferent.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813091703_added_entity_constraints_Erkenning.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813091903_added_entity_constraints_Nationaliteit.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200813092003_added_entity_constraints_Toetsresultaat.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>
