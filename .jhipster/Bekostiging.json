@@ -1,0 +1,34 @@
+{
+  "name": "Bekostiging",
+  "fields": [
+    {
+      "fieldName": "burgerservicenummer",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "brutoMaandsalaris",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "verblijf",
+      "otherEntityRelationshipName": "bekostiging",
+      "relationshipName": "verblijf",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200813091503",
+  "entityTableName": "bekostiging",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "skipClient": true
+}

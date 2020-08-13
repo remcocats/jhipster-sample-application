@@ -1,0 +1,69 @@
+{
+  "name": "Verblijf",
+  "fields": [
+    {
+      "fieldName": "verblijfId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "aanvangsdatum",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "einddatum",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "verblijfsdoel",
+      "otherEntityRelationshipName": "verblijf",
+      "relationshipName": "verblijfsdoel",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "vreemdeling",
+      "otherEntityRelationshipName": "verblijf",
+      "relationshipName": "vreemdeling",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "referentstelling",
+      "otherEntityRelationshipName": "verblijf",
+      "relationshipName": "referentstelling",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "kenniswerk",
+      "otherEntityRelationshipName": "verblijf",
+      "relationshipName": "kenniswerk",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "bekostiging",
+      "otherEntityRelationshipName": "verblijf",
+      "relationshipName": "bekostiging"
+    }
+  ],
+  "changelogDate": "20200813091103",
+  "entityTableName": "verblijf",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "skipClient": true
+}

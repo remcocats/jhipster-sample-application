@@ -47,6 +47,24 @@ public class CacheConfiguration {
             createCache(cm, com.mycompany.myapp.domain.User.class.getName());
             createCache(cm, com.mycompany.myapp.domain.Authority.class.getName());
             createCache(cm, com.mycompany.myapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.mycompany.myapp.domain.Verblijf.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Verblijf.class.getName() + ".bekostigings");
+            createCache(cm, com.mycompany.myapp.domain.Referentstelling.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Vreemdeling.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Vreemdeling.class.getName() + ".toetsresultaats");
+            createCache(cm, com.mycompany.myapp.domain.Vreemdeling.class.getName() + ".nationaliteits");
+            createCache(cm, com.mycompany.myapp.domain.PersoonsnaamVolgensDocumentVoorGrensoverschrijding.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Bekostiging.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.ErkendReferent.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.ErkendReferent.class.getName() + ".erkennings");
+            createCache(cm, com.mycompany.myapp.domain.ErkendReferent.class.getName() + ".toetsresultaats");
+            createCache(cm, com.mycompany.myapp.domain.Erkenning.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Kenniswerk.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Nationaliteit.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Toetsresultaat.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Toetsresultaat.class.getName() + ".vreemdelings");
+            createCache(cm, com.mycompany.myapp.domain.Toetsresultaat.class.getName() + ".erkendReferents");
+            createCache(cm, com.mycompany.myapp.domain.Verblijfsdoel.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
