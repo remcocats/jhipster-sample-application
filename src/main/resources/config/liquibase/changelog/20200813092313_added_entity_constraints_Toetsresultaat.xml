@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity Toetsresultaat.
+    -->
+    <changeSet id="20200813092313-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="erkend_referent_id"
+                                 baseTableName="toetsresultaat"
+                                 constraintName="fk_toetsresultaat_erkend_referent_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="erkend_referent"/>
+
+        <addForeignKeyConstraint baseColumnNames="vreemdeling_id"
+                                 baseTableName="toetsresultaat"
+                                 constraintName="fk_toetsresultaat_vreemdeling_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="vreemdeling"/>
+
+        <addForeignKeyConstraint baseColumnNames="erkend_referent_id"
+                                 baseTableName="toetsresultaat"
+                                 constraintName="fk_toetsresultaat_erkend_referent_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="erkend_referent"/>
+
+    </changeSet>
+</databaseChangeLog>

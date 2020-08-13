@@ -1,0 +1,48 @@
+{
+  "name": "Toetsresultaat",
+  "fields": [
+    {
+      "fieldName": "omschrijving",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "waarde",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "erkendReferent",
+      "otherEntityRelationshipName": "toetsresultaat",
+      "relationshipName": "erkendReferent",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "vreemdeling",
+      "otherEntityRelationshipName": "toetsresultaat",
+      "relationshipName": "vreemdeling",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "erkendReferent",
+      "otherEntityRelationshipName": "toetsresultaat",
+      "relationshipName": "erkendReferent",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200813092313",
+  "entityTableName": "toetsresultaat",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "skipClient": true
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Erkenning",
+  "fields": [
+    {
+      "fieldName": "verblijfsdoel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "aanvangsdatum",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "einddatum",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "erkendReferent",
+      "otherEntityRelationshipName": "erkenning",
+      "relationshipName": "erkendReferent",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200813092013",
+  "entityTableName": "erkenning",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "skipClient": true
+}

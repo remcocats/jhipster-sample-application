@@ -1,0 +1,30 @@
+{
+  "name": "Nationaliteit",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "vreemdeling",
+      "otherEntityRelationshipName": "nationaliteit",
+      "relationshipName": "vreemdeling",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200813092213",
+  "entityTableName": "nationaliteit",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "skipClient": true
+}
