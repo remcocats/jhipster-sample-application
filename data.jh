@@ -1,0 +1,99 @@
+entity Verblijf {
+	verblijfId String,
+    aanvangsdatum String,
+    einddatum String
+}
+
+relationship OneToOne {
+	Verblijf{verblijfsdoel} to Verblijfsdoel,
+    Verblijf{vreemdeling} to Vreemdeling,
+    Verblijf{referentstelling} to Referentstelling,
+    Verblijf{kenniswerk} to Kenniswerk
+}
+
+relationship OneToMany {
+    Verblijf{bekostiging} to Bekostiging
+}
+
+entity Vreemdeling {
+	vreemdelingId String,
+    vnummer String,
+    burgerservicenummer String
+}
+
+relationship OneToOne {
+	Vreemdeling{naam} to PersoonsnaamVolgensDocumentVoorGrensoverschrijding,
+}
+
+relationship OneToMany {
+    Vreemdeling{toetsresultaat} to Toetsresultaat,
+    Vreemdeling{nationaliteit} to Nationaliteit
+}
+
+entity PersoonsnaamVolgensDocumentVoorGrensoverschrijding {
+	voornamen String,
+    achternaam String
+}
+
+entity Bekostiging {
+	burgerservicenummer String,
+    brutoMaandsalaris Integer
+}
+
+entity ErkendReferent {
+	referentId String,
+    naam String,
+	rsin String,
+    kvk String,
+    klantNummer String,
+    datumUitschrijvingKvk String
+}
+
+relationship OneToMany {
+    ErkendReferent{erkenning} to Erkenning,
+    ErkendReferent{toetsresultaat} to Toetsresultaat
+}
+
+entity Erkenning {
+	verblijfsdoel String,
+    aanvangsdatum String,
+    einddatum String,
+}
+
+entity Kenniswerk {
+	functie String,
+    brutoMaandsalaris Integer,
+    ufoCode String
+}
+
+entity Nationaliteit {
+	code String
+}
+
+relationship OneToOne {
+	Referentstelling{erkendReferent} to ErkendReferent
+}
+
+entity Toetsresultaat {
+	omschrijving String,
+    waarde Boolean
+}
+
+entity Verblijfsdoel {
+	type String
+}
+
+paginate Vreemdeling with pagination
+paginate Verblijf with pagination
+paginate ErkendReferent with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+skipClient all
+
+// Set service options to all except few
+// service all with serviceImpl except Employee, Job
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
