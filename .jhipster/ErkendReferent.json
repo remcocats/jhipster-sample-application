@@ -1,0 +1,55 @@
+{
+  "name": "ErkendReferent",
+  "fields": [
+    {
+      "fieldName": "referentId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "naam",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rsin",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "kvk",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "klantNummer",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "datumUitschrijvingKvk",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "erkenning",
+      "otherEntityRelationshipName": "erkendReferent",
+      "relationshipName": "erkenning"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "toetsresultaat",
+      "otherEntityRelationshipName": "erkendReferent",
+      "relationshipName": "toetsresultaat"
+    }
+  ],
+  "changelogDate": "20200813090351",
+  "entityTableName": "erkend_referent",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "skipClient": true
+}
