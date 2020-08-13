@@ -1,0 +1,26 @@
+{
+  "name": "PersoonsnaamVolgensDocumentVoorGrensoverschrijding",
+  "fields": [
+    {
+      "fieldName": "voornamen",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "achternaam",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20200813091713",
+  "entityTableName": "persoonsnaam_volgens_document_voor_grensoverschrijding",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "skipClient": true
+}

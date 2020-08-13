@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity Vreemdeling.
+    -->
+    <changeSet id="20200813091613-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="verblijf_id"
+                                 baseTableName="vreemdeling"
+                                 constraintName="fk_vreemdeling_verblijf_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="verblijf"/>
+
+        <addForeignKeyConstraint baseColumnNames="naam_id"
+                                 baseTableName="vreemdeling"
+                                 constraintName="fk_vreemdeling_naam_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="persoonsnaam_volgens_document_voor_grensoverschrijding"/>
+
+    </changeSet>
+</databaseChangeLog>
