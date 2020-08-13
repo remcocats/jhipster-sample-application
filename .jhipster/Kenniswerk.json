@@ -1,0 +1,30 @@
+{
+  "name": "Kenniswerk",
+  "fields": [
+    {
+      "fieldName": "functie",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "brutoMaandsalaris",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ufoCode",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20200813090551",
+  "entityTableName": "kenniswerk",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "skipClient": true
+}
